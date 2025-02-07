@@ -13,7 +13,7 @@ git add .
 git commit -m "add message"
 git push -u origin master
 
-git clone  https://github.com/hamitmizrak/ibb_ecodation_javacore.git
+git clone  https://github.com/sumeyyessmn/ibb_ecodation_javacore.git
 ```
 ---
 
