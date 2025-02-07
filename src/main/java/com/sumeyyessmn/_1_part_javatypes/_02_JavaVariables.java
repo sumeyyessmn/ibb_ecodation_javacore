@@ -1,6 +1,6 @@
 package com.sumeyyessmn._1_part_javatypes;
 
-public class _03_JavaVariables {
+public class _02_JavaVariables {
     /** Veri Değiken isimlerini yazarken;
             veri isimlendirmeleri;
             1-) isim, sıfat, zamir kullanmamiz lazim
