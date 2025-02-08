@@ -13,7 +13,7 @@ public class _08_Scanner {
         System.out.println("Lütfen adınızı giriniz: ");
         name = scanner.nextLine();
         System.out.println("Lütfen soyadınızı giriniz: ");
-        surname = scanner.nextLine();
+        surname = scanner.next();
         System.out.println("Bildiğiniz dil sayısı: ");
         language = scanner.nextInt();
 
