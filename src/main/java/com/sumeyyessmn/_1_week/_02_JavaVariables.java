@@ -1,4 +1,4 @@
-package com.sumeyyessmn._1_part_javatypes;
+package com.sumeyyessmn._1_week;
 
 public class _02_JavaVariables {
     /** Veri Değiken isimlerini yazarken;

@@ -1,4 +1,4 @@
-package com.sumeyyessmn._1_part_javatypes;
+package com.sumeyyessmn._1_week;
 
 public class _05_JavaOperators {
     public static void main(String[] args) {

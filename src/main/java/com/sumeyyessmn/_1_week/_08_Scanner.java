@@ -1,4 +1,4 @@
-package com.sumeyyessmn._1_part_javatypes;
+package com.sumeyyessmn._1_week;
 
 import java.util.Scanner;
 
