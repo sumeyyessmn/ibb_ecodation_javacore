@@ -2,7 +2,7 @@ package com.sumeyyessmn._1_week;
 
 import java.util.Scanner;
 
-public class _08_Scanner {
+public class _08_1_Scanner {
     public static void main(String[] args) {
         //Field
         String name, surname;
