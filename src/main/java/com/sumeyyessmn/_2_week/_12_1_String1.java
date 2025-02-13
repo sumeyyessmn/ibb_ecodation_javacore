@@ -49,7 +49,34 @@ public class _12_1_String1 {
         }else {
             System.out.println("Verdiğiniz kelime en fazla "+vocabulary3.length()+" karakter vardır");
         }
+        //contains
+        System.out.println("Geçiyor mu? "+vocabulary1.contains("Java"));
+        //split
 
+        //Replace
+        System.out.println(vocabulary1.replace("Java","Java 2025"));
+        /// Birleştirme
+        String concatenation = vocabulary1 + vocabulary2 + vocabulary3;
+        System.out.println(concatenation);
+        // Birleştirme (concat)
+        System.out.println(vocabulary1.concat(" jsp").concat(" jsf"));
+
+        //Birleştirme (StringBuilder)
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(vocabulary1).append(" jsp").append(" jsf");
+        String dataToString1 = stringBuilder.toString();
+        System.out.println(dataToString1);
+
+        //Birleştirme (StringBuffer)
+        StringBuffer stringBuffer = new StringBuffer();
+        stringBuffer.append(vocabulary1).append(" jsp").append(" jsf");
+        String dataToString2 = stringBuilder.toString();
+        System.out.println(dataToString2);
+
+        //hashcode
+        System.out.println(vocabulary1.hashCode());
+        System.out.println(vocabulary2.hashCode());
+        System.out.println(vocabulary3.hashCode());
 
     }
 }

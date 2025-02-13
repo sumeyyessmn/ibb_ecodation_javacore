@@ -1,0 +1,20 @@
+package com.sumeyyessmn._2_week;
+
+public class _13_2_MethodIsReturn {
+    // 3-Returnlü parametresiz
+    public String metotReturnluParametresiz(){
+        return "metot returnlu parametresiz";
+    }
+    // 4-Returlü parametreli
+    public Integer metotReturnluParametreli(int number){
+        return number;
+    }
+    //PSVM
+    public static void main(String[] args) {
+        _13_2_MethodIsReturn isReturn1 = new _13_2_MethodIsReturn();
+        String result1 = isReturn1.metotReturnluParametresiz();
+        System.out.println(result1);
+        Integer result2 = isReturn1.metotReturnluParametreli(13);
+        System.out.println(result2);
+    }
+}
