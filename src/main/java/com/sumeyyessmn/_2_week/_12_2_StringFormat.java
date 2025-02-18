@@ -35,14 +35,22 @@ public class _12_2_StringFormat {
     }
     //formatter4
     public static void formatter4(){
-        System.out.printf("Merhabalar Adınız: %s, T.C.: %d, Fiyat: %f","Sumeyye",343563,44.56);
+        String name = "Sumeyye";
+        int tcNumber = 343563;
+        double price = 44.56;
+        System.out.printf("Merhabalar Adınız: %s, T.C.: %d, Fiyat: %f",name,tcNumber,price);
+        System.out.println();
+        System.out.printf("Merhabalar Adınız: %10s, T.C.: %d, Fiyat: %f",name,tcNumber,price);//%10s => sagdan 10 karakter genişliğinde
+        System.out.println();
+        System.out.printf("%-15s %-15d %3f",name,tcNumber,price);//%-15s => sola dogru yasla
+        System.out.println();
     }
 
     public static void main(String[] args) {
         //formatter1();
         //formatter2();
-        formatter3();
-        //formatter4();
+        //formatter3();
+        formatter4();
     }
     
 }
