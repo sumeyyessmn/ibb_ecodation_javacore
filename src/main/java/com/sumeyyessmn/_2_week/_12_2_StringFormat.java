@@ -14,6 +14,20 @@ package com.sumeyyessmn._2_week;
 import java.util.Formatter;
 
 public class _12_2_StringFormat {
+    /*
+  ⚠️ Önemli Notlar
+  ❌ Eclipse gibi IDE'lerde ANSI renkleri desteklenmez.
+  ✅ Terminal, IntelliJ IDEA ve VS Code Terminal'de çalışır.
+  ✅ Windows 10+ veya Linux/macOS’ta desteklenir.
+  ✅ Windows'ta CMD yerine PowerShell veya Windows Terminal kullanmalısınız.
+   */
+    public static final String RESET = "\033[0m";  // Renk sıfırlama
+    public static final String RED = "\033[31m";   // Kırmızı
+    public static final String GREEN = "\033[32m"; // Yeşil
+    public static final String YELLOW = "\033[33m";// Sarı
+    public static final String BLUE = "\033[34m";  // Mavi
+    public static final String PURPLE = "\033[35m";// Mor
+    public static final String CYAN = "\033[36m";  // Açık Mavi
     //formatter1
     public static void formatter1(){
         //Eğer new formatter yazarsak close() ile manuel kapatmak zorundayız.
@@ -29,11 +43,14 @@ public class _12_2_StringFormat {
         String formatterString = String.format("Merhabalar Adınız: %s, T.C.: %d, Fiyat: %f","Sumeyye",343563,44.56);
         System.out.println(formatterString);
     }
-    //formatter3 (Best Practice)
+    //formatter3 (Best Practice) [String.format()]
     public static void formatter3(){
+        String formatterString = String.format("Merhabalar Adınız: %s, T.C.: %d, Fiyat: %f","Sumeyye",343563,44.56);
+        System.out.println(formatterString);
+        System.out.println(YELLOW+formatterString+RESET);
 
     }
-    //formatter4
+    //formatter4(printf)
     public static void formatter4(){
         String name = "Sumeyye";
         int tcNumber = 343563;
@@ -49,8 +66,8 @@ public class _12_2_StringFormat {
     public static void main(String[] args) {
         //formatter1();
         //formatter2();
-        //formatter3();
-        formatter4();
+        formatter3();
+        //formatter4();
     }
     
 }
