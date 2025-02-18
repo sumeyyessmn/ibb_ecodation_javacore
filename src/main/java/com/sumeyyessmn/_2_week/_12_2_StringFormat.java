@@ -12,6 +12,7 @@ public class _12_2_StringFormat {
         Formatter formatter = new Formatter();
         formatter.format("Merhabalar Adınız: %s, T.C.: %d, Fiyat: %f","Sumeyye",343563,44.56);
         System.out.println(formatter);
+        formatter.close(); //Belleği serbest bırakmak için
     }
 
     public static void main(String[] args) {
