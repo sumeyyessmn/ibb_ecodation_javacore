@@ -16,6 +16,7 @@ import java.util.Formatter;
 public class _12_2_StringFormat {
     //formatter1
     public static void formatter1(){
+        //Eğer new formatter yazarsak close() ile manuel kapatmak zorundayız.
         Formatter formatter = new Formatter();
         formatter.format("Merhabalar Adınız: %s, T.C.: %d, Fiyat: %f","Sumeyye",343563,44.56);
         System.out.println(formatter);
@@ -24,14 +25,24 @@ public class _12_2_StringFormat {
     }
     //formatter2 (Best Practice)
     public static void formatter2(){
-        //Formatter formatter = new Formatter();
+        //Eğer String.format yazarsak kapatmak zorunda değiliz GC(Garbage Collector) otomatik çalışır
         String formatterString = String.format("Merhabalar Adınız: %s, T.C.: %d, Fiyat: %f","Sumeyye",343563,44.56);
         System.out.println(formatterString);
+    }
+    //formatter3 (Best Practice)
+    public static void formatter3(){
+
+    }
+    //formatter4
+    public static void formatter4(){
+        System.out.printf("Merhabalar Adınız: %s, T.C.: %d, Fiyat: %f","Sumeyye",343563,44.56);
     }
 
     public static void main(String[] args) {
         //formatter1();
-        formatter2();
+        //formatter2();
+        formatter3();
+        //formatter4();
     }
     
 }
